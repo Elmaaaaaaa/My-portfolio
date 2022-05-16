@@ -1,0 +1,215 @@
+body{
+ 
+  font-family: "Gabriola", Times, serif;
+   background-color: #000;
+  opacity: 0.7;
+   opacity:0.8;
+  color:#fff;
+  font-size: 30px;
+
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar{
+  width: 100%;
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-bottom: 2px solid #fff
+  
+}
+.nav-content{
+  display:flex;
+  width: 100%;
+  text-align: right;
+}
+.nav-content .logo{
+  display: flex;
+  width: 15%;
+}
+.nav-content .logo img{
+  width: 100%;
+}
+.nav-content ul{
+  list-style: none;
+  font-size: 20px;
+  width: 100%;
+  padding: 0;
+  font-weight: bold;
+  margin: auto;
+}
+.nav-content ul li{
+  display: inline-block;
+  padding-left: 20px;
+ 
+}
+.nav-content ul li a{
+  text-decoration: none;
+  color: #fff;
+  transition: all.5s ease-in-out;
+}
+.nav-content ul li a:hover{
+  color: #6495ED;
+}
+#welcome-section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  transition: all.5s ease-in-out;
+  align-items: center;
+  color:#fff;
+  position: relative;
+  
+}
+#welcome-section h1{
+  font-size: 200%;
+}
+#welcome-section: hover{
+  transform: scale(1.5);
+}
+
+#projects{
+  
+  padding: 20px 0;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#projects h2{
+  font-size: 150%;
+  
+}
+#projects.project-tile{
+  padding-bottom: 30px;
+  padding-top: 75px;
+}
+#projects.works{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+#projects.works.work{
+  display:block;
+  width: 100%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+#projects .works .work img{
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  border-radius: 50px;
+  border: solid 4px orange;
+  
+}
+
+#projects .works .work figcaption {
+     position: relative;
+    color: #fff;
+  text-align: center;
+  bottom: 20px; 
+}
+a{
+  text-decoration: none;
+}
+#contact {
+  color: #fff;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+#contact:hover{
+  color: yelow;
+}
+
+#contact h2{
+  font-size: 150%;
+  
+}
+
+
+#contact ul{
+    padding: 0;
+    font-size: 30px;
+    list-style: none;
+    width: 100%;
+}
+
+#contact ul li{
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  transition: all .5s ease-in-out;
+}
+
+#contact ul li:hover{
+  color: #6495ED;
+}
+
+#contact ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*============= Footer ===============*/
+footer {
+  width: 100%;
+  background-color: orange;
+  border-top: 2px solid #fff
+}
+
+footer .footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+ 
+}
+
+
+/*media query*/
+@media(min-width: 400px){
+  h1{
+    font-size: 90%;
+  }
+  .nav-content .logo{
+    width: 10%;
+  }
+  .nav-content ul li {
+    padding-left: 40px;
+  }
+  
+  
+  #projects .works .work figcaption {
+    font-size: 80%;
+  }
+  
+}
+@media(min-width: 600px){
+  h1{
+    font-size: 90%;
+  }
+ 
+  .nav-content ul{
+    font-size: 24px;
+  }
+  .nav-content ul li {
+    padding-left: 40px;
+  }
+  
+ 
+  
+}
